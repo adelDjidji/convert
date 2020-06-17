@@ -1,0 +1,99 @@
+.section1 {
+  background: #1123ff;
+  padding-top: 64px;
+  padding-left: 10%;
+  .title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 50px;
+    color: #ffffff;
+    margin-top: 12%;
+    b {
+      font-weight: bold;
+      font-family: Montserrat-bold;
+    }
+  }
+  p {
+    font-family: open-sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    color: #ffffff;
+  }
+}
+
+.section2 {
+  padding: 5% 13%;
+  .video-frame .play-icon {
+    position: absolute;
+    top: 62%;
+    // top: 74vh;
+    left: 28%;
+    padding: 12pt 12pt 12pt 14pt;
+    background: white;
+    border-radius: 50%;
+  }
+}
+.section3 {
+  background: #f6f6fa;
+  padding: 100px 190px;
+  .cards {
+      .card{
+        background: #FFFFFF;
+        border: 1px solid #E5E8ED;
+        border-radius: 5px;
+        border-bottom: solid 5px #1123FF;
+        margin: 10px;
+        min-height: 383pt;
+        transition: all ease 0.4s;
+        &:hover{
+            background: #1123FF !important;
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 12px rgba(56, 56, 56, 0.45);
+            .card-title,.card-list{
+                color: white !important;
+            }
+            ul.card-list li::before {
+                color: white !important;
+            }
+            .card-cover{
+                filter: saturate(0) brightness(1.2);
+            }
+        }
+        .card-content{
+            text-align: left;
+            padding: 31px 20px;
+            ul.card-list{
+                list-style: none;
+            }
+            ul.card-list li::before {
+                content: "\2022";
+                color: #1123FF;
+                font-weight: bold;
+                display: inline-block; 
+                width: 1em;
+                margin-left: -1em;
+              }
+        }
+        .card-cover {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            &.cover1 {
+              background-image: url("/Assets/img/block-3-card-img1.svg");
+            }
+            &.cover2{
+              background-image: url("/Assets/img/block-3-card-img2.svg");
+            }
+            &.cover3{
+              background-image: url("/Assets/img/block-3-card-img3.svg");
+            }
+            &.cover4{
+              background-image: url("/Assets/img/block-3-card-img4.svg");
+            }
+          }
+      }
+    
+  }
+}
