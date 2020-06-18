@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Layout, Col, Row, Drawer, Dropdown, Icon } from "antd";
+import { Layout, Col, Row, Drawer, Dropdown, Icon, Menu } from "antd";
 import "./navbar.scss";
 
 const { Header } = Layout;
@@ -23,11 +23,10 @@ export default function Navbar() {
   };
 
   const menu_convert = (
-    <div className="top-menu-dropdown">
+    <div className="top-menu-dropdown convert">
       <Row type="flex" justify="space-between" className="bordered-bottom">
         <Col span={8}>
           <p className="strong">
-            {" "}
             <img className="icon" src={logo} alt="" />
             your monthly fixed bills into a new form of earnings
           </p>
@@ -50,7 +49,7 @@ export default function Navbar() {
       <Row>
         <Col span={14} className="bordered-right">
           <div style={{ paddingTop: 38 }} className="bordered-bottom">
-            <ul className="list">
+            <ul className="list nav">
               <li>
                 <div className="list-item-icon red">
                   <img src="/Assets/icons/calculator.svg" alt="" />
@@ -89,7 +88,6 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          
         </Col>
         <Col span={10} className="space-in-left">
           <Row>
@@ -115,7 +113,7 @@ export default function Navbar() {
       </Row>
       <Row>
         <Col span={14}>
-        <div  style={{ paddingTop: 40 }} >
+          <div style={{ paddingTop: 40 }}>
             <h3 className="blue-title">STORE YOUR BILLS ON CLOUD</h3>
             <p>
               We provide cloud storage service{" "}
@@ -125,12 +123,15 @@ export default function Navbar() {
             </p>
           </div>
           <div className="right space-in-right">
-          <img className="img-rond" src="/Assets/icons/arrow-right-rond.svg" alt=""/>
+            <img
+              className="img-rond"
+              src="/Assets/icons/arrow-right-rond.svg"
+              alt=""
+            />
           </div>
-        
         </Col>
         <Col span={10} className="space-in-left bordered-left">
-        <div  style={{ paddingTop: 40 }}>
+          <div style={{ paddingTop: 40 }}>
             <h3 className="blue-title">STORE YOUR BILLS ON CLOUD</h3>
             <p>
               We provide cloud storage service{" "}
@@ -140,110 +141,124 @@ export default function Navbar() {
             </p>
           </div>
           <div className="right space-in-right">
-          <img className="img-rond" src="/Assets/icons/arrow-right-rond.svg" alt=""/>
+            <img
+              className="img-rond"
+              src="/Assets/icons/arrow-right-rond.svg"
+              alt=""
+            />
           </div>
         </Col>
       </Row>
     </div>
   );
 
-
-  const menu_free = <div className="top-menu-dropdown">
-  <Row type="flex" justify="space-between" className="bordered-bottom">
-    <Col span={8}>
-      <p className="strong">
-        {" "}
-        <img className="icon" src={logo} alt="" />
-        Free Credit Extension(FCX) with 
-      </p>
-    </Col>
-    <Col span={10}>
-      <div className="btn dark-btn">
-        <span>
-          <img src="/Assets/icons/appleicon.svg" alt="" />
-          <span className="small">Download on the</span>
-          <img src="/Assets/icons/appstore.svg" alt="" />
-        </span>
-      </div>
-      <div className="btn dark-btn">
-        <img src="/Assets/icons/googleplayicon.svg" alt="" />
-        <span className="small">GET IT ON</span>
-        <img src="/Assets/icons/googleplay.svg" alt="" />
-      </div>
-    </Col>
-  </Row>
-  <Row>
-    <Col span={14} className="bordered-right">
-      <div style={{ paddingTop: 38 }} className="">
-      <b className="bold-sm-title">Feature</b>
-        <ul className="list">
-          <li>
-            <div className="list-item-icon blue">
-              <img src="/Assets/icons/calendar.svg" alt="" />
-            </div>
-            <div className="list-item-text">
-              <strong>Free Credit Extension(FCX) </strong>
-              <br />
-              <span>
-              Enjoy the amazing “FCX” feature with
-              your credit card 
-              </span>
-            </div>
-          </li>
-          <li>
-            <div className="list-item-icon blue">
-              <img src="/Assets/icons/cashflow.svg" alt="" />
-            </div>
-            <div className="list-item-text">
-              <strong>Extra Cash Flow</strong>
-              <br />
-              <span>
-              With the amazing “FCX” feature, you can now free up your cash flow and enhance your personal finance 
-              </span>
-            </div>
-          </li>
-          <li>
-            <div className="list-item-icon red">
-              <img src="/Assets/icons/interest.svg" alt="" />
-            </div>
-            <div className="list-item-text">
-              <strong>Interest-Free</strong>
-              <br />
-              <span>Pay your monthly fixed bill payment and enjoy up to 45
-              days free credit with zero interest, for free.</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div className="right space-in-right">
-      <img className="img-rond" src="/Assets/icons/arrow-right-rond.svg" alt=""/>
-      </div>
-    </Col>
-    <Col span={10} className="space-in-left">
+  const menu_free = (
+    <div className="top-menu-dropdown free">
+      <Row type="flex" justify="space-between" className="bordered-bottom">
+        <Col span={8}>
+          <p className="strong">
+            {" "}
+            <img className="icon" src={logo} alt="" />
+            Free Credit Extension(FCX) with
+          </p>
+        </Col>
+        <Col span={10}>
+          <div className="btn dark-btn">
+            <span>
+              <img src="/Assets/icons/appleicon.svg" alt="" />
+              <span className="small">Download on the</span>
+              <img src="/Assets/icons/appstore.svg" alt="" />
+            </span>
+          </div>
+          <div className="btn dark-btn">
+            <img src="/Assets/icons/googleplayicon.svg" alt="" />
+            <span className="small">GET IT ON</span>
+            <img src="/Assets/icons/googleplay.svg" alt="" />
+          </div>
+        </Col>
+      </Row>
+      <Row>
+        <Col span={14} className="bordered-right">
+          <div style={{ paddingTop: 38 }} className="">
+            <b className="bold-sm-title">Feature</b>
+            <ul className="list">
+              <li>
+                <div className="list-item-icon blue">
+                  <img src="/Assets/icons/calendar.svg" alt="" />
+                </div>
+                <div className="list-item-text">
+                  <strong>Free Credit Extension(FCX) </strong>
+                  <br />
+                  <span>
+                    Enjoy the amazing “FCX” feature with your credit card
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div className="list-item-icon blue">
+                  <img src="/Assets/icons/cashflow.svg" alt="" />
+                </div>
+                <div className="list-item-text">
+                  <strong>Extra Cash Flow</strong>
+                  <br />
+                  <span>
+                    With the amazing “FCX” feature, you can now free up your
+                    cash flow and enhance your personal finance
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div className="list-item-icon blue">
+                  <img src="/Assets/icons/interest.svg" alt="" />
+                </div>
+                <div className="list-item-text">
+                  <strong>Interest-Free</strong>
+                  <br />
+                  <span>
+                    Pay your monthly fixed bill payment and enjoy up to 45 days
+                    free credit with zero interest, for free.
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div className="right space-in-right">
+            <img
+              className="img-rond"
+              src="/Assets/icons/arrow-right-rond.svg"
+              alt=""
+            />
+          </div>
+        </Col>
+        <Col span={10} className="space-in-left">
           <b className="bold-sm-title">Good Things are meant to be share </b>
-          <ul className="list">
-          <li>
-            <div className="list-item-icon red">
-              <img src="/Assets/icons/refer.svg" alt="" />
-            </div>
-            <div className="list-item-text">
-              <strong>Refer & Earn</strong>
-              <br />
-              <span>
-             Refer your loved one to enjoy the benefits and earns more.
-              </span>
-            </div>
-          </li>
+          <ul className="list nav">
+            <li>
+              <div className="list-item-icon red">
+                <img src="/Assets/icons/refer.svg" alt="" />
+              </div>
+              <div className="list-item-text">
+                <strong>Refer & Earn</strong>
+                <br />
+                <span>
+                  Refer your loved one to enjoy the benefits and earns more.
+                </span>
+              </div>
+            </li>
           </ul>
           <div>
-          <img style={{    float: 'right', marginRight: -39}} src="/Assets/icons/visacard.svg" alt=""/>
-    <img src="/Assets/icons/visalogo.svg" alt=""/>
-    <img src="/Assets/icons/mastercardlogo.svg" alt=""/>
+            <img
+              style={{ float: "right", marginRight: -39 }}
+              src="/Assets/icons/visacard.svg"
+              alt=""
+            />
+            <img src="/Assets/icons/visalogo.svg" alt="" />
+            <img src="/Assets/icons/mastercardlogo.svg" alt="" />
           </div>
-    </Col>
-  </Row>
- 
-</div>;
+        </Col>
+      </Row>
+    </div>
+  );
   return (
     <Header className="nav-header">
       <Drawer
@@ -255,14 +270,28 @@ export default function Navbar() {
       ></Drawer>
       <Row>
         <Col xs={14} sm={14} md={14} lg={14} xl={14} className="center">
-          <img className="icon" src={logo} alt="" />
+          <img className="logo icon" src={logo} alt="" />
         </Col>
         <Col xs={10} sm={10} md={10} lg={10} xl={10}>
           <span className="menu-nav">
             <Dropdown overlay={menu_convert}>
               <a onClick={(e) => e.preventDefault()}>
                 <span className="ant-dropdown-link">convert </span>
-                <img src="/Assets/icons/Line-down.svg" alt="" />
+                <svg
+                  width="12"
+                  height="7"
+                  viewBox="0 0 12 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 1L6 6L1 1"
+                    stroke="#1C202B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </a>
             </Dropdown>
           </span>
@@ -270,13 +299,26 @@ export default function Navbar() {
             <Dropdown overlay={menu_free}>
               <a onClick={(e) => e.preventDefault()}>
                 <span className="ant-dropdown-link">free credit </span>
-                <img src="/Assets/icons/Line-down.svg" alt="" />
+                <svg
+                  width="12"
+                  height="7"
+                  viewBox="0 0 12 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 1L6 6L1 1"
+                    stroke="#1C202B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </a>
             </Dropdown>
           </span>
         </Col>
       </Row>
-      
     </Header>
   );
 }

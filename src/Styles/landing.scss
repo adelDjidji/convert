@@ -1,6 +1,8 @@
+@import "../App.scss";
+
 .section1 {
   background: #1123ff;
-  padding-top: 64px;
+  padding-top: 128px;
   padding-left: 10%;
   .title {
     font-family: Montserrat;
@@ -25,75 +27,315 @@
 .section2 {
   padding: 5% 13%;
   .video-frame .play-icon {
-    position: absolute;
-    top: 62%;
+    // position: absolute;
+    // top: 62%;
     // top: 74vh;
-    left: 28%;
+    // left: 28%;
     padding: 12pt 12pt 12pt 14pt;
     background: white;
     border-radius: 50%;
+    animation: animate-play-icon 1.4s infinite;
+    cursor: pointer;
+    transition: all ease-in 0.1s;
+  }
+  .video-frame:hover .play-icon {
+    transform: scale(1.3);
+    animation: animate-play-icon 0.9s infinite;
+  }
+  .video-frame-icon {
+    position: absolute;
+    width: 100%;
+    padding-top: 8em;
+  }
+}
+.modal-video {
+  div.ant-modal-body {
+    max-height: 426pt;
+  }
+  .ant-modal-close-x {
+    svg {
+      fill: white !important;
+    }
   }
 }
 .section3 {
   background: #f6f6fa;
   padding: 100px 190px;
   .cards {
-      .card{
-        background: #FFFFFF;
-        border: 1px solid #E5E8ED;
-        border-radius: 5px;
-        border-bottom: solid 5px #1123FF;
-        margin: 10px;
-        min-height: 383pt;
-        transition: all ease 0.4s;
-        &:hover{
-            background: #1123FF !important;
-            transform: translateY(-5px);
-            box-shadow: 0px 8px 12px rgba(56, 56, 56, 0.45);
-            .card-title,.card-list{
-                color: white !important;
-            }
-            ul.card-list li::before {
-                color: white !important;
-            }
-            .card-cover{
-                filter: saturate(0) brightness(1.2);
-            }
+    .card {
+      background: #ffffff;
+      border-radius: 5px;
+      border-bottom: solid 5px #1123ff;
+      margin: 10px;
+      min-height: 383pt;
+      transition: all ease 0.4s;
+      &:hover {
+        background: #1123ff !important;
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 12px rgba(56, 56, 56, 0.45);
+        .card-title,
+        .card-list {
+          color: white !important;
         }
-        .card-content{
-            text-align: left;
-            padding: 31px 20px;
-            ul.card-list{
-                list-style: none;
-            }
-            ul.card-list li::before {
-                content: "\2022";
-                color: #1123FF;
-                font-weight: bold;
-                display: inline-block; 
-                width: 1em;
-                margin-left: -1em;
-              }
+        ul.card-list li::before {
+          color: white !important;
         }
         .card-cover {
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            &.cover1 {
-              background-image: url("/Assets/img/block-3-card-img1.svg");
-            }
-            &.cover2{
-              background-image: url("/Assets/img/block-3-card-img2.svg");
-            }
-            &.cover3{
-              background-image: url("/Assets/img/block-3-card-img3.svg");
-            }
-            &.cover4{
-              background-image: url("/Assets/img/block-3-card-img4.svg");
-            }
-          }
+          filter: saturate(0) brightness(1.2);
+        }
       }
-    
+      .card-content {
+        text-align: left;
+        padding: 31px 20px;
+        ul.card-list {
+          list-style: none;
+        }
+        ul.card-list li::before {
+          content: "\2022";
+          color: #1123ff;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+      .card-cover {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: all ease 0.4s;
+        &.cover1 {
+          background-image: url("/Assets/img/block-3-card-img1.svg");
+        }
+        &.cover2 {
+          background-image: url("/Assets/img/block-3-card-img2.svg");
+        }
+        &.cover3 {
+          background-image: url("/Assets/img/block-3-card-img3.svg");
+        }
+        &.cover4 {
+          background-image: url("/Assets/img/block-3-card-img4.svg");
+        }
+      }
+    }
+  }
+}
+.section4 {
+  background-color: white;
+  padding: 100px 190px;
+}
+.section5 {
+  background: #f6f6fa;
+  padding: 100px 190px;
+  .boxes {
+    border-radius: 10px;
+    max-height: 271px;
+    overflow: hidden;
+    box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.25);
+  }
+  .box {
+    padding: 20px;
+    &.box-cyan {
+      background: #16f1f0;
+    }
+    &.box-blue-light {
+      background: #278afd;
+      *,
+      .box-title,
+      .poucentage {
+        color: white;
+      }
+    }
+    &.box-blue {
+      background: #1d23ff;
+      *,
+      .box-title,
+      .poucentage {
+        color: white;
+      }
+    }
+    &.box-brown {
+      background: linear-gradient(264.71deg, #b88e6d 4.32%, #e8d9ca 97.03%);
+      *,
+      .box-title,
+      .poucentage {
+        color: white;
+      }
+    }
+    .box-title,
+    .poucentage {
+      font-family: Montserrat-bold;
+      font-style: normal;
+      font-weight: bold;
+
+      text-align: center;
+      color: #1c202b;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .box-title {
+      font-size: 17px;
+      margin-block-end: 10px;
+      margin-block-start: 15px;
+    }
+    .poucentage {
+      font-size: 30px;
+    }
+    p {
+      font-family: open-sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      text-align: center;
+      color: #1c202b;
+    }
+  }
+  .sold-box {
+    background: #46dede;
+    box-shadow: 9px 9px 30px rgba(56, 56, 56, 0.15);
+    border-radius: 10px;
+    padding: 14pt;
+    .sold-title {
+      line-height: 1;
+      margin: 9px;
+    }
+    .desc {
+      margin-bottom: 25px;
+    }
+    .unit {
+      position: relative;
+      top: -3px;
+    }
+    .number {
+      margin: 0 7pt;
+      position: relative;
+      top: 3pt;
+    }
+    span.old-price::after {
+      content: "";
+      width: 200px;
+      height: 1pt;
+      background: red;
+      position: absolute;
+      transform: rotateZ(13deg);
+      left: 5vw;
+      bottom: 43px;
+    }
+    span.old-price::before {
+      content: "";
+      width: 200px;
+      height: 1pt;
+      background: red;
+      position: absolute;
+      transform: rotateZ(-13deg);
+      left: 5vw;
+      bottom: 43px;
+    }
+  }
+}
+.section6 {
+  background-color: white;
+  padding: 100px 190px;
+}
+.section7 {
+  background-color: $blue;
+  padding: 100px 190px;
+}
+.section8 {
+  background: #f6f6fa;
+  padding: 100px 190px;
+}
+.footer {
+  background: #1c202b;
+  color: white;
+  padding: 41px 190px 1px 190px;
+  hr{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-color: rgba(196, 196, 196, 0.2);
+  }
+  ul.footer-list {
+    list-style: none;
+    padding: 0;
+    font-family: open-sans;
+}
+  .social {
+    margin-top: 21px;
+    display: flex;
+    div {
+      cursor: pointer;
+      transition: all ease-in 0.3s;
+      background: rgba(196, 196, 196, 0.15);
+      border-radius: 10px;
+      margin-right: 20px;
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg path{
+        transition: all ease-in 0.3s;
+      }
+      &.fb:hover {
+        background: white;
+        svg path{
+        fill: #3d589b;
+      }
+    }
+      &.insta:hover {
+        background: white;
+        svg path{
+        // background-image: linear-gradient(#015fbb, #eb0447);
+        fill: #eb0447;
+      }
+    }
+    }
+  }
+}
+.modal-bg{
+  background-image: url(/Assets/img/landing-modal-img.svg);
+    height: 524pt;
+    background-size: cover;
+}
+.modal-right-content{
+  padding: 46px 63px !important;
+}
+.card-h{
+  background: #F5F6F8;
+border-radius: 5px;
+border-right: solid 5px $blue;
+display: flex;
+margin-bottom: 14px;
+.card-h-title{
+  font-size: 16px;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 900;
+margin-bottom: 15px;
+}
+.card-h-content{
+  padding: 25px;
+}
+.card-h-tags{
+  color: #4F5258;
+  font-size: 14px;
+}
+  .card-h-cover{
+    width: 200px;
+    height: 145px;
+    background-size: cover;
+    display: inline-block;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    &.cover1{
+      background: url(/Assets/img/modal-card-img-3.svg);
+    }
+    &.cover2{
+      background: url(/Assets/img/modal-card-img-2.svg);
+    }
+    &.cover3{
+      background: url(/Assets/img/modal-card-img-1.svg);
+    }
   }
 }
