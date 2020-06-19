@@ -1,0 +1,7 @@
+{
+    "name": "convert",
+    "description": "convert",
+    "repository": "https://github.com/adelDjidji/convert.git",
+    "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+    "keywords": ["convert"]
+  }
