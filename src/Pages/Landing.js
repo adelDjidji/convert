@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import { Row, Col, Modal } from "antd";
 import "../Styles/landing.scss";
@@ -24,6 +24,15 @@ const black_btns = (
 export default function Landing() {
   const [modalVisible, setmodalVisible] = useState(false);
   const [modalVideoVisible, setmodalVideoVisible] = useState(false);
+  const [navBarWhite, setnavBarWhite] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
+
 
   const showModal = () => {
     setmodalVisible(true);
@@ -44,6 +53,26 @@ export default function Landing() {
   const handleCancelVideo = (e) => {
     console.log(e);
     setmodalVideoVisible(false);
+  };
+
+  var lastScrollTop = 0;
+  const handleScroll = (e) => {
+    e.preventDefault();
+    const currentScrollTop = e.target.scrollingElement.scrollTop;
+
+    if (currentScrollTop > lastScrollTop) {
+      if (currentScrollTop >= 90 && !navBarWhite) {
+        setnavBarWhite(true);
+      }
+      if (currentScrollTop <= 90 && navBarWhite) {
+        setnavBarWhite(false);
+      }
+    }else {
+      if (currentScrollTop <= 90 && navBarWhite) {
+        setnavBarWhite(false);
+      }
+    }
+    lastScrollTop = currentScrollTop;
   };
 
   const MyModal = () => (
@@ -124,7 +153,7 @@ export default function Landing() {
   );
   return (
     <div className="landing">
-      <Navbar />
+      <Navbar isWhite={navBarWhite} />
       <MyModal />
       <VideoModal />
       <section className="section1">

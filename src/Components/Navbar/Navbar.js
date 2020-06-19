@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Layout, Col, Row, Drawer, Dropdown, Icon, Menu } from "antd";
 import "./navbar.scss";
@@ -9,8 +9,14 @@ const logo = "/Assets/icons/Logo A - colour.png";
 /**
  * Main Top Navbar menu
  */
-export default function Navbar() {
+export default function Navbar({isWhite}) {
   const [drawerVisible, setdrawerVisible] = useState(false);
+  const [whiteMode, setwhiteMode] = useState()
+
+  useEffect(()=>{
+    setwhiteMode(isWhite)
+    console.log("changed mode to ",isWhite);
+  },[isWhite])
 
   // handle mobile drawer Open
   const showDrawer = () => {
@@ -23,7 +29,7 @@ export default function Navbar() {
   };
 
   const menu_convert = (
-    <div className="top-menu-dropdown convert">
+    <div className={`top-menu-dropdown convert fixed`}>
       <Row type="flex" justify="space-between" className="bordered-bottom">
         <Col span={10}>
           <p className="strong">
@@ -113,7 +119,7 @@ export default function Navbar() {
       </Row>
       <Row>
         <Col span={14}>
-          <div style={{ paddingTop: 40 }}>
+          <div style={{ paddingTop: 19 }}>
             <h3 className="blue-title">STORE YOUR BILLS ON CLOUD</h3>
             <p>
               We provide cloud storage service{" "}
@@ -131,7 +137,7 @@ export default function Navbar() {
           </div>
         </Col>
         <Col span={10} className="space-in-left bordered-left">
-          <div style={{ paddingTop: 40 }}>
+          <div style={{ paddingTop: 19 }}>
             <h3 className="blue-title">MEMBERSHUPIP BENEFITS</h3>
             <p>
             Understand how you can gain membership
@@ -151,7 +157,7 @@ export default function Navbar() {
   );
 
   const menu_free = (
-    <div className="top-menu-dropdown free">
+    <div className="top-menu-dropdown free fixed">
       <Row type="flex" justify="space-between" className="bordered-bottom space-in-bottom md">
         <Col span={10}>
           <p className="strong">
@@ -257,7 +263,7 @@ export default function Navbar() {
     </div>
   );
   return (
-    <Header className="nav-header">
+    <Header className={`nav-header ${whiteMode?"":"transparent"}`}>
       <Drawer
         title="Playlist & Group manager"
         placement="left"
@@ -266,7 +272,7 @@ export default function Navbar() {
         visible={drawerVisible}
       ></Drawer>
       <Row>
-        <Col xs={14} sm={14} md={14} lg={15} xl={17} className="center">
+        <Col xs={14} sm={14} md={14} lg={15} xl={17} className="">
           <img className="logo icon" src={logo} alt="" />
         </Col>
         <Col xs={0} sm={0} md={0} lg={9} xl={7}>
@@ -293,7 +299,7 @@ export default function Navbar() {
             </Dropdown>
           </span>
           <span className="menu-nav">
-            <Dropdown overlay={menu_free}>
+            <Dropdown overlay={menu_free} >
               <a onClick={(e) => e.preventDefault()}>
                 <span className="ant-dropdown-link">free credit </span>
                 <svg

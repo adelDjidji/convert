@@ -108,7 +108,7 @@ ul.list {
   list-style: none;
   li {
     line-height: 21px;
-    margin-bottom: 35px;
+    margin-bottom: 24px;
     display: inline-flex;
     transition: all ease .3s;
     &:hover{
@@ -125,7 +125,7 @@ ul.list {
     span {
       font-size: 14px;
       color: #4f5258;
-      margin-top: 15px;
+      margin-top: 6px;
       display: flow-root;
     }
     .list-item-icon {
@@ -436,4 +436,7 @@ video {
     filter: drop-shadow(2px 21px 29px #000000a6);
   }
 }
+}
+.ant-dropdown.ant-dropdown-placement-bottomLeft{
+  // position: fixed ;
 }
