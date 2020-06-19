@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import { Row, Col, Modal } from "antd";
 import "../Styles/landing.scss";
+import "../Styles/landing-respo.scss";
 
 const black_btns = (
   <div>
@@ -55,7 +56,7 @@ export default function Landing() {
       footer={[]}
     >
       <Row>
-        <Col span={12} className="modal-right-content">
+        <Col xs={12} sm={12} md={12} lg={12} xl={12} className="modal-right-content">
           <h2 className="sub-title f22 montserrat-bold bold left">
             3 mins to Convert your monthly to bills to
             <span className="blue">EXTRA</span> Cash
@@ -64,7 +65,7 @@ export default function Landing() {
             <div className="card-h-cover cover1"></div>
             <div className="card-h-content">
               <h1 className="card-h-title ">
-                Convert Your <span className="blue">Installment</span> 
+                Convert Your <span className="blue">Installment</span>
                 To Cash
               </h1>
               <span className="card-h-tags">
@@ -76,11 +77,11 @@ export default function Landing() {
             <div className="card-h-cover cover2"></div>
             <div className="card-h-content">
               <h1 className="card-h-title ">
-                Convert Your <span className="blue">Education</span> 
+                Convert Your <span className="blue">Education</span>
                 Bills To Cash
               </h1>
               <span className="card-h-tags">
-              Condo | Parking | Security Fees
+                Condo | Parking | Security Fees
               </span>
             </div>
           </div>
@@ -88,21 +89,17 @@ export default function Landing() {
             <div className="card-h-cover cover3"></div>
             <div className="card-h-content">
               <h1 className="card-h-title ">
-                Convert Your <span className="blue"> Service Fees</span> 
+                Convert Your <span className="blue"> Service Fees</span>
                 To Cash
               </h1>
               <span className="card-h-tags">
-              Condo | Parking | Security Fees
+                Condo | Parking | Security Fees
               </span>
             </div>
           </div>
-          <div style={{marginBlockStart:30}}>
-          {black_btns}
-          </div>
-          
+          <div style={{ marginBlockStart: 30 }}>{black_btns}</div>
         </Col>
-        <Col span={12} className="modal-bg">
-        </Col>
+        <Col xs={12} sm={12} md={12} lg={12} xl={12} className="modal-bg"></Col>
       </Row>
     </Modal>
   );
@@ -130,8 +127,8 @@ export default function Landing() {
       <section className="section1">
         <Row>
           <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-            <h1 className="title">
-              <b>Convert</b> your <b>“Business”</b>
+            <h1 className="title text-light-shadow">
+              <b>Convert</b> your <b>“Business” </b>
               monthly bills to <b>EXTRA cash</b>
             </h1>
             <p>
@@ -139,45 +136,90 @@ export default function Landing() {
               earnings and enjoy unlimited cloud storage (Digitise your bills)
               with monthly cash flow monitoring tools.
             </p>
-            {black_btns}
+            <div className="only-desktop">
+              <div className="btn dark-btn">
+                <span>
+                  <img src="/Assets/icons/appleicon.svg" alt="" />
+                  <span className="small">Download on the</span>
+                  <img src="/Assets/icons/appstore.svg" alt="" />
+                </span>
+              </div>
+              <div className="btn dark-btn">
+                <img src="/Assets/icons/googleplayicon.svg" alt="" />
+                <span className="small">GET IT ON</span>
+                <img src="/Assets/icons/googleplay.svg" alt="" />
+              </div>
+            </div>
           </Col>
-          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+          <Col xs={12} sm={12} md={12} lg={12} xl={12}>
             <img src="/Assets/img/landing-section1.svg" alt="" />
+          </Col>
+          <Col xs={12} sm={12} md={12} lg={0} xl={0}>
+            <div className="only-mobile">
+              <div className="btn dark-btn">
+                <span>
+                  <img src="/Assets/icons/appleicon.svg" alt="" />
+                  <span className="small">Download on the</span>
+                  <img src="/Assets/icons/appstore.svg" alt="" />
+                </span>
+              </div>
+              <div className="btn dark-btn">
+                <img src="/Assets/icons/googleplayicon.svg" alt="" />
+                <span className="small">GET IT ON</span>
+                <img src="/Assets/icons/googleplay.svg" alt="" />
+              </div>
+            </div>
           </Col>
         </Row>
       </section>
       <section className="section2">
-        <Row className="space-bottom lg">
+        <Row className="space-bottom lg flex">
           <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-            <div className="center">
+            <div
+              className="center item-option"
+              data-aos="fade-right"
+              data-aos-delay="500"
+            >
               <img src="/Assets/icons/wallet-icon-blue.svg" alt="" />
               <p>Up to 45 Days Free Credit</p>
             </div>
           </Col>
           <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-            <div className="center">
+            <div
+              className="center item-option"
+              data-aos="fade-right"
+              data-aos-delay="500"
+            >
               <img src="/Assets/icons/safety.svg" alt="" />
               <p>Easy, Fast & Secured</p>
             </div>
           </Col>
           <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-            <div className="center">
+            <div
+              className="center item-option"
+              data-aos="fade-left"
+              data-aos-delay="500"
+            >
               <img src="/Assets/icons/bill-blue.svg" alt="" />
               <p>Unlimited Bill Storage</p>
             </div>
           </Col>
           <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-            <div className="center">
+            <div
+              className="center item-option"
+              data-aos="fade-left"
+              data-aos-delay="500"
+            >
               <img src="/Assets/icons/convertor.svg" alt="" />
               <p>Monthly Cash Convertor Assistant</p>
             </div>
           </Col>
         </Row>
-        <Row>
-          <Col sm={24} md={12}>
-            <img src="/Assets/img/block-2-img.svg" alt="" />
+        <Row data-aos="fade-down">
+          <Col xs={24} sm={24} md={12}>
+            <img className="flying" src="/Assets/img/block-2-img.svg" alt="" />
           </Col>
-          <Col sm={24} md={12}>
+          <Col xs={24} sm={24} md={12}>
             <h1 className="title-medium">Introduce</h1>
             <p>
               <img
@@ -210,7 +252,8 @@ export default function Landing() {
       <section className="section3 center">
         <h1 className="title-medium">Rental = Extra Cash </h1>
         <p className="sub-title">
-          Convert your Rental to Extra Cash while paying your rental every month
+          Convert your Rental to Extra Cash while <br /> paying your rental
+          every month
         </p>
         <p>
           Rental is an unavoidable monthly fixed expenses to all types of
@@ -224,8 +267,11 @@ export default function Landing() {
           your rental{" "}
         </p>
 
-        <Row className="cards space-top lg">
-          <Col sm={12} md={6}>
+        <Row
+          className="cards space-top lg"
+          data-aos="fade-down"
+        >
+          <Col xs={12} sm={12} md={6}>
             <div className="card">
               <div className="card-cover cover1"></div>
               <div className="card-content">
@@ -239,7 +285,7 @@ export default function Landing() {
               </div>
             </div>
           </Col>
-          <Col sm={12} md={6}>
+          <Col xs={12} sm={12} md={6}>
             <div className="card">
               <div className="card-cover cover2"></div>
               <div className="card-content">
@@ -252,7 +298,7 @@ export default function Landing() {
               </div>
             </div>
           </Col>
-          <Col sm={12} md={6}>
+          <Col xs={12} sm={12} md={6}>
             <div className="card">
               <div className="card-cover cover3"></div>
               <div className="card-content">
@@ -265,7 +311,7 @@ export default function Landing() {
               </div>
             </div>
           </Col>
-          <Col sm={12} md={6}>
+          <Col xs={12} sm={12} md={6}>
             <div className="card">
               <div className="card-cover cover4"></div>
               <div className="card-content">
@@ -278,29 +324,53 @@ export default function Landing() {
             </div>
           </Col>
         </Row>
-        <Row className="space-bottom space-top lg">
+        <Row className="space-bottom space-top lg flex">
           <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-            <div className="center">
+            <div
+              className="center item-option"
+              data-aos="fade-right"
+              
+            >
               <img src="/Assets/icons/wallet-red.svg" alt="" />
-              <p>Up to 45 Days Free Credit</p>
+              <p className="gotham bold gray large-line">
+                Up to 45 Days Free Credit
+              </p>
             </div>
           </Col>
           <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-            <div className="center">
+            <div
+              className="center item-option"
+              data-aos="fade-right"
+              
+            >
               <img src="/Assets/icons/safety-red.svg" alt="" />
-              <p>Easy, Fast & Secured</p>
+              <p className="gotham bold gray large-line">
+                Easy, Fast & Secured
+              </p>
             </div>
           </Col>
           <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-            <div className="center">
+            <div
+              className="center item-option"
+              data-aos="fade-left"
+              
+            >
               <img src="/Assets/icons/bill-red.svg" alt="" />
-              <p>Unlimited Bill Storage</p>
+              <p className="gotham bold gray large-line">
+                Unlimited Bill Storage
+              </p>
             </div>
           </Col>
           <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-            <div className="center">
+            <div
+              className="center item-option"
+              data-aos="fade-left"
+              
+            >
               <img src="/Assets/icons/convertor-red.svg" alt="" />
-              <p>Monthly Cash Convertor Assistant</p>
+              <p className="gotham bold gray large-line">
+                Monthly Cash Convertor Assistant
+              </p>
             </div>
           </Col>
         </Row>
@@ -320,7 +390,14 @@ export default function Landing() {
       </section>
       <section className="section4">
         <Row>
-          <Col sm={24} md={12} className="space-in-right">
+          <Col
+          xs={24}
+            sm={24}
+            md={12}
+            className="space-in-right"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <h1 className="title-medium space-bottom gotham">
               Free Credit Extension (FCX) Up to 45 Days
             </h1>
@@ -380,8 +457,8 @@ export default function Landing() {
               </li>
             </ul>
           </Col>
-          <Col sm={24} md={12}>
-            <img src="/Assets/img/block-4-img.svg" alt="" />
+          <Col xs={24} sm={24} md={12} data-aos="fade-left" data-aos-duration="1000">
+            <img className="flying" src="/Assets/img/block-4-img.svg" alt="" />
           </Col>
         </Row>
       </section>
@@ -392,7 +469,7 @@ export default function Landing() {
           be entitled to be silver membership. Your membership level determind
           your earning each time afer you make payment from CONVERT
         </p>
-        <Row className="boxes">
+        <Row className="boxes" data-aos="fade-down" data-aos-duration="1000">
           <Col md={24} lg={6} className="box box-cyan">
             <div className="box-icon">
               <img src="/Assets/icons/icon-king-gray.svg" alt="" />
@@ -442,7 +519,7 @@ export default function Landing() {
 
         <Row className="space-top lg">
           <Col md={0} lg={6}>
-            <img src="/Assets/img/block-5-img1.svg" alt="" />
+            <img className="flying" src="/Assets/img/block-5-img1.svg" alt="" />
           </Col>
           <Col md={24} lg={6}>
             <h1 className="gothma bold space-top lg f25 left">
@@ -450,11 +527,11 @@ export default function Landing() {
             </h1>
           </Col>
           <Col md={24} lg={0}>
-            <img src="/Assets/img/block-5-img1.svg" alt="" />
-            <img src="/Assets/img/block5-img2.svg" alt="" />
+            <img className="flying" src="/Assets/img/block-5-img1.svg" alt="" />
+            <img className="flying" src="/Assets/img/block5-img2.svg" alt="" />
           </Col>
           <Col md={0} lg={6}>
-            <img src="/Assets/img/block5-img2.svg" alt="" />
+            <img className="flying" src="/Assets/img/block5-img2.svg" alt="" />
           </Col>
           <Col md={24} lg={6}>
             <h1 className="gotham bold space-top lg f25 left">
@@ -470,7 +547,11 @@ export default function Landing() {
             <h1 className="gotham bold text-light-shadow space-bottom f25">
               Membership Fees
             </h1>
-            <div className="sold-box">
+            <div
+              className="sold-box"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
               <h1 className="sold-title bold red f30 text-light-shadow">
                 24 Months free
               </h1>
@@ -482,7 +563,7 @@ export default function Landing() {
               </span>
             </div>
           </Col>
-          <Col md={24} lg={7} className="space-top lg">
+          <Col md={24} lg={9} className="space-top lg">
             <p className="med bold small-height text-light-shadow dark-gray">
               {" "}
               <span className="red">Download now! 24 Months Free!</span>
@@ -496,10 +577,10 @@ export default function Landing() {
       <section className="section6">
         <h1 className="gotham bold f32 center">Enjoy The Benefits Below</h1>
         <Row className="space-top">
-          <Col span={12}>
-            <img src="/Assets/img/block6-img.svg" alt="" />
+          <Col xs={24} sm={24} md={24} lg={12} xl={12} data-aos="fade-right" data-aos-duration="2000">
+            <img className="flying" src="/Assets/img/block6-img.svg" alt="" />
           </Col>
-          <Col span={12}>
+          <Col xs={24} sm={24} md={24} lg={12} xl={12} data-aos="fade-left" data-aos-duration="2000">
             <ul className="list">
               <li>
                 <div>
@@ -565,7 +646,7 @@ export default function Landing() {
       <section className="section7">
         <Row>
           <Col md={0} lg={12}>
-            <img src="/Assets/img/block7-img.svg" alt="" />
+            <img className="flying" src="/Assets/img/block7-img.svg" alt="" />
           </Col>
           <Col md={24} lg={12}>
             <h1 className="f35 white gotham">
@@ -630,7 +711,13 @@ export default function Landing() {
               To know more about our news and updates, please subscribe now{" "}
             </h1>
           </Col>
-          <Col md={24} lg={14}>
+          <Col
+            md={24}
+            lg={14}
+            data-aos="flip-right"
+            data-aos-duration="2000"
+            data-aos-delay="1000"
+          >
             <input
               className="material-input"
               type="text"
@@ -642,7 +729,7 @@ export default function Landing() {
       </section>
       <footer className="footer">
         <Row>
-          <Col span={6}>
+          <Col xs={24} sm={24} md={24} lg={6} xl={6}>
             <img
               className="icon small"
               src="/Assets/icons/Logo A - white.png"
@@ -681,7 +768,7 @@ export default function Landing() {
               </div>
             </div>
           </Col>
-          <Col span={6}>
+          <Col xs={24} sm={24} md={24} lg={6} xl={6}>
             <h3 className="white bold Montserrat">COMPANY</h3>
             <ul className="footer-list whi">
               <li>About Convert</li>
@@ -689,14 +776,14 @@ export default function Landing() {
               <li>Contact Us</li>
             </ul>
           </Col>
-          <Col span={6}>
+          <Col xs={24} sm={24} md={24} lg={6} xl={6}>
             <h3 className="white bold Montserrat">WHY CHOOSE US</h3>
             <ul className="footer-list whi">
               <li>Fraud & Security</li>
               <li>FAQ</li>
             </ul>
           </Col>
-          <Col span={6}>
+          <Col xs={24} sm={24} md={24} lg={6} xl={6}>
             <h3 className="white bold Montserrat">Legal</h3>
             <ul className="footer-list whi">
               <li>Terms & Conditions</li>

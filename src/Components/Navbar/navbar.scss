@@ -3,6 +3,8 @@
 .nav-header {
   position: fixed;
   width: 100%;
+  height: 90px;
+  padding-top: 12px;
   background: white !important;
   z-index: 2;
   box-shadow: 2px 2px 4px #1514146b;
@@ -28,11 +30,17 @@ img.logo{
     .ant-dropdown-link{
       text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
       color: $blue;
+      border-bottom: solid 1px;
+      padding-bottom: 3pt;
     }
-    path{
-    stroke: $blue !important;
-    transform: translateY(0px);
+    svg{
+      transform: rotate(180deg);
+      path{
+        stroke: $blue !important;
+        transform: translateY(0px);
+        }
     }
+    
   }
   .ant-dropdown-trigger {
     path{
@@ -51,10 +59,8 @@ img.logo{
 .top-menu-dropdown {
     background-color: white;
     padding: 39px;
-    padding-bottom: 0;
     box-shadow: 5px 6px 7px #0c0c0c40, 18px 35px 30px #0e0d0d24;
     border-radius: 1pt;
-    // transform: scale(0.8);
     margin: auto;
     &.free{
       margin-top: 20px !important;
@@ -72,11 +78,14 @@ img.logo{
   }
   p.strong {
     font-style: normal;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 18px;
     line-height: 150%;
-
     color: #1c202b;
+    font-family: ubuntu;
+  }
+  .space-in-top-min{
+    padding-top: 24px;
   }
 }
 .dark-btn {
@@ -103,4 +112,26 @@ img.logo{
     margin-right: 4pt;
     margin-top: 5px;
   }
+}
+.icon.logo{
+  filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.25)) ;
+}
+.bold-sm-title{
+  margin-bottom: 18px;
+  display: block;
+  &.feature{
+    margin-left: 1em;
+    margin-bottom: 1.3em;
+  }
+}
+  ul.gray-list{
+    list-style: none;
+  }
+ul.gray-list li::before {
+  content: "\2022";
+  color: #B4B7BB;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }

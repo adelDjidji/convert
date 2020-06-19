@@ -61,6 +61,9 @@
 .section3 {
   background: #f6f6fa;
   padding: 100px 190px;
+  .sub-title+p{
+    padding: 0 12em;
+  }
   .cards {
     .card {
       background: #ffffff;
@@ -71,8 +74,8 @@
       transition: all ease 0.4s;
       &:hover {
         background: #1123ff !important;
-        transform: translateY(-5px);
-        box-shadow: 0px 8px 12px rgba(56, 56, 56, 0.45);
+        // transform: translateY(-5px);
+        box-shadow: 0px 2px 36px #1123ff85 !important;
         .card-title,
         .card-list {
           color: white !important;
@@ -105,6 +108,8 @@
         background-position: center;
         background-repeat: no-repeat;
         transition: all ease 0.4s;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
         &.cover1 {
           background-image: url("/Assets/img/block-3-card-img1.svg");
         }
@@ -133,14 +138,31 @@
     max-height: 271px;
     overflow: hidden;
     box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.25);
+    transition: all ease .1s;
+    &:hover{
+      box-shadow: 2px 2px 29px rgba(0, 0, 0, 0.25);
+    }
   }
   .box {
     padding: 20px;
+    transition: all ease .4s;
+    &:hover{
+    //   filter: invert(1);
+     
+    }
     &.box-cyan {
-      background: #16f1f0;
+      // background: #16f1f0;
+      background: linear-gradient(90deg, #16f1f0, #16f1f0);
+      &:hover{
+        background: linear-gradient(90deg, #16f1f0, #1abfbe);
+      }
     }
     &.box-blue-light {
-      background: #278afd;
+      // background: #278afd;
+      background: linear-gradient(90deg, #278afd, #278afd);
+      &:hover{
+        background: linear-gradient(90deg, #278afd, #1b70d1);
+      }
       *,
       .box-title,
       .poucentage {
@@ -148,7 +170,11 @@
       }
     }
     &.box-blue {
-      background: #1d23ff;
+      // background: #1d23ff;
+      background: linear-gradient(90deg, #1d23ff, #1d23ff);
+      &:hover{
+        background: linear-gradient(90deg, #1d23ff, #161dcf);
+      }
       *,
       .box-title,
       .poucentage {
@@ -157,11 +183,15 @@
     }
     &.box-brown {
       background: linear-gradient(264.71deg, #b88e6d 4.32%, #e8d9ca 97.03%);
+      &:hover{
+        background: linear-gradient(264.71deg, #a57f61 4.32%, #ffe5ca 97.03%);
+      }
       *,
       .box-title,
       .poucentage {
         color: white;
       }
+
     }
     .box-title,
     .poucentage {
@@ -195,6 +225,11 @@
     box-shadow: 9px 9px 30px rgba(56, 56, 56, 0.15);
     border-radius: 10px;
     padding: 14pt;
+    transition: all ease .3s;
+    &:hover{
+      background: white;
+      box-shadow: 9px 9px 60px rgba(56, 56, 56, 0.25);
+    }
     .sold-title {
       line-height: 1;
       margin: 9px;
@@ -218,8 +253,8 @@
       background: red;
       position: absolute;
       transform: rotateZ(13deg);
-      left: 5vw;
-      bottom: 43px;
+      left: 3vw;
+      bottom: 50px;
     }
     span.old-price::before {
       content: "";
@@ -228,8 +263,8 @@
       background: red;
       position: absolute;
       transform: rotateZ(-13deg);
-      left: 5vw;
-      bottom: 43px;
+      left: 3vw;
+      bottom: 50px;
     }
   }
 }

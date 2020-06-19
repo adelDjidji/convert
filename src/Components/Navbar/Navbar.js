@@ -25,25 +25,25 @@ export default function Navbar() {
   const menu_convert = (
     <div className="top-menu-dropdown convert">
       <Row type="flex" justify="space-between" className="bordered-bottom">
-        <Col span={8}>
+        <Col span={10}>
           <p className="strong">
             <img className="icon" src={logo} alt="" />
             your monthly fixed bills into a new form of earnings
           </p>
         </Col>
-        <Col span={10}>
-          <div className="btn dark-btn">
-            <span>
-              <img src="/Assets/icons/appleicon.svg" alt="" />
-              <span className="small">Download on the</span>
-              <img src="/Assets/icons/appstore.svg" alt="" />
-            </span>
-          </div>
-          <div className="btn dark-btn">
-            <img src="/Assets/icons/googleplayicon.svg" alt="" />
-            <span className="small">GET IT ON</span>
-            <img src="/Assets/icons/googleplay.svg" alt="" />
-          </div>
+        <Col span={14} className="right">
+        <div className="btn dark-btn">
+          <span>
+            <img src="/Assets/icons/appleicon.svg" alt="" />
+            <span className="small">Download on the</span>
+            <img src="/Assets/icons/appstore.svg" alt="" />
+          </span>
+        </div>
+        <div className="btn dark-btn">
+          <img src="/Assets/icons/googleplayicon.svg" alt="" />
+          <span className="small">GET IT ON</span>
+          <img src="/Assets/icons/googleplay.svg" alt="" />
+        </div>
         </Col>
       </Row>
       <Row>
@@ -89,11 +89,11 @@ export default function Navbar() {
             </ul>
           </div>
         </Col>
-        <Col span={10} className="space-in-left">
+        <Col span={10} className="space-in-left space-in-top">
           <Row>
             <Col span={12}>
-              <b className="bold-sm-title">Learn More</b>
-              <ul>
+              <b className="bold-sm-title ubuntu f18 gray">Learn More</b>
+              <ul className="gray-list">
                 <li>
                   About <img className="icon logo-small" src={logo} alt="" />
                 </li>
@@ -103,8 +103,8 @@ export default function Navbar() {
               </ul>
             </Col>
             <Col span={12}>
-              <b className="bold-sm-title">Security</b>
-              <ul>
+              <b className="bold-sm-title ubuntu f18 gray">Security</b>
+              <ul className="gray-list">
                 <li>Fraud & Security</li>
               </ul>
             </Col>
@@ -132,15 +132,13 @@ export default function Navbar() {
         </Col>
         <Col span={10} className="space-in-left bordered-left">
           <div style={{ paddingTop: 40 }}>
-            <h3 className="blue-title">STORE YOUR BILLS ON CLOUD</h3>
+            <h3 className="blue-title">MEMBERSHUPIP BENEFITS</h3>
             <p>
-              We provide cloud storage service{" "}
-              <b>“DIGITAL BILL STORAGE” “NO MORE PAPER”</b> + EASY TRACKING +
-              MONTHLY CASH FLOW MANAGEMENT TOOLS for you to manage your monthly
-              cash flow and strength it with our “Pay-Later” feature
+            Understand how you can gain membership
+            point from your discipline behaviour
             </p>
           </div>
-          <div className="right space-in-right">
+          <div className="right space-in-right space-in-top">
             <img
               className="img-rond"
               src="/Assets/icons/arrow-right-rond.svg"
@@ -154,15 +152,14 @@ export default function Navbar() {
 
   const menu_free = (
     <div className="top-menu-dropdown free">
-      <Row type="flex" justify="space-between" className="bordered-bottom">
-        <Col span={8}>
+      <Row type="flex" justify="space-between" className="bordered-bottom space-in-bottom md">
+        <Col span={10}>
           <p className="strong">
-            {" "}
-            <img className="icon" src={logo} alt="" />
             Free Credit Extension(FCX) with
+            <img className="icon" src={logo} alt="" />
           </p>
         </Col>
-        <Col span={10}>
+        <Col span={14} className="right">
           <div className="btn dark-btn">
             <span>
               <img src="/Assets/icons/appleicon.svg" alt="" />
@@ -180,7 +177,7 @@ export default function Navbar() {
       <Row>
         <Col span={14} className="bordered-right">
           <div style={{ paddingTop: 38 }} className="">
-            <b className="bold-sm-title">Feature</b>
+            <b className="bold-sm-title feature">Feature</b>
             <ul className="list">
               <li>
                 <div className="list-item-icon blue">
@@ -230,8 +227,8 @@ export default function Navbar() {
             />
           </div>
         </Col>
-        <Col span={10} className="space-in-left">
-          <b className="bold-sm-title">Good Things are meant to be share </b>
+        <Col span={10} className="space-in-left space-in-top">
+          <b className="bold-sm-title bold-sm-title ubuntu f18 gray">Good Things are meant to be share </b>
           <ul className="list nav">
             <li>
               <div className="list-item-icon red">
@@ -269,10 +266,10 @@ export default function Navbar() {
         visible={drawerVisible}
       ></Drawer>
       <Row>
-        <Col xs={14} sm={14} md={14} lg={14} xl={14} className="center">
+        <Col xs={14} sm={14} md={14} lg={15} xl={17} className="center">
           <img className="logo icon" src={logo} alt="" />
         </Col>
-        <Col xs={10} sm={10} md={10} lg={10} xl={10}>
+        <Col xs={0} sm={0} md={0} lg={9} xl={7}>
           <span className="menu-nav">
             <Dropdown overlay={menu_convert}>
               <a onClick={(e) => e.preventDefault()}>
@@ -317,6 +314,9 @@ export default function Navbar() {
               </a>
             </Dropdown>
           </span>
+        </Col>
+        <Col xs={10} sm={10} md={10} lg={0} xl={0} className="right">
+          <img className="btn" src="/Assets/icons/menu-icon.svg" alt=""/>
         </Col>
       </Row>
     </Header>
