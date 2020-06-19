@@ -61,14 +61,14 @@ export default function Landing() {
     const currentScrollTop = e.target.scrollingElement.scrollTop;
 
     if (currentScrollTop > lastScrollTop) {
-      if (currentScrollTop >= 90 && !navBarWhite) {
+      if (currentScrollTop >= 60 && !navBarWhite) {
         setnavBarWhite(true);
       }
-      if (currentScrollTop <= 90 && navBarWhite) {
+      if (currentScrollTop <= 60 && navBarWhite) {
         setnavBarWhite(false);
       }
     }else {
-      if (currentScrollTop <= 90 && navBarWhite) {
+      if (currentScrollTop <= 60 && navBarWhite) {
         setnavBarWhite(false);
       }
     }
@@ -159,16 +159,16 @@ export default function Landing() {
       <section className="section1">
         <Row>
           <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-            <h1 className="title text-light-shadow">
+            <h1 className="title text-light-shadow" data-aos="fade-down">
               <b>Convert</b> your <b>“Business” </b>
               monthly bills to <b>EXTRA cash</b>
             </h1>
-            <p>
+            <p data-aos="fade-up" data-aos-duration="800">
               Sign up Now to “CONVERT” your monthly fixed bills payment into
               earnings and enjoy unlimited cloud storage (Digitise your bills)
               with monthly cash flow monitoring tools.
             </p>
-            <div className="only-desktop">
+            <div className="only-desktop" data-aos="fade-up" data-aos-duration="1000">
               <div className="btn dark-btn">
                 <span>
                   <img src="/Assets/icons/appleicon.svg" alt="" />
@@ -184,7 +184,7 @@ export default function Landing() {
             </div>
           </Col>
           <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-            <img src="/Assets/img/landing-section1.svg" alt="" />
+            <img data-aos="fade-left" data-aos-duration="1400" className="animate__animated animate__backInRight" src="/Assets/img/landing-section1.svg" alt="" />
           </Col>
           <Col xs={12} sm={12} md={12} lg={0} xl={0}>
             <div className="only-mobile">
@@ -210,7 +210,7 @@ export default function Landing() {
             <div
               className="center item-option"
               data-aos="fade-right"
-              data-aos-delay="500"
+              data-aos-delay="1000"
             >
               <img src="/Assets/icons/wallet-icon-blue.svg" alt="" />
               <p>Up to 45 Days Free Credit</p>
@@ -282,12 +282,15 @@ export default function Landing() {
         </Row>
       </section>
       <section className="section3 center">
-        <h1 className="title-medium">Rental = Extra Cash </h1>
-        <p className="sub-title">
+      <div data-aos="flip-down">
+      <h1 className="title-medium" >Rental = Extra Cash </h1>
+      </div>
+        <div data-aos="flip-up">
+         <p className="sub-title">
           Convert your Rental to Extra Cash while <br /> paying your rental
           every month
         </p>
-        <p>
+        <p >
           Rental is an unavoidable monthly fixed expenses to all types of
           businesses as well as individual.
           <img
@@ -298,6 +301,8 @@ export default function Landing() {
           created an incredible benefits for you to gain more every month from
           your rental{" "}
         </p>
+        </div>
+       
 
         <Row
           className="cards space-top lg"
@@ -495,14 +500,17 @@ export default function Landing() {
         </Row>
       </section>
       <section className="section5 center">
+      <div data-aos="flip-up">
         <h1 className="title-medium gotham">Addtional Earning</h1>
+      </div>
+        
         <p className="simple space-bottom space-top">
           No joining fees, no sign up fees. All default new register users will
           be entitled to be silver membership. Your membership level determind
           your earning each time afer you make payment from CONVERT
         </p>
-        <Row className="boxes" data-aos="fade-down" data-aos-duration="1000">
-          <Col md={24} lg={6} className="box box-cyan">
+        <Row className="boxes" >
+          <Col md={24} lg={6} className="box box-cyan"  data-aos-delay="300" data-aos="flip-up">
             <div className="box-icon">
               <img src="/Assets/icons/icon-king-gray.svg" alt="" />
             </div>
@@ -513,7 +521,7 @@ export default function Landing() {
               Continue 6 months usage auto upgrade to Gold
             </p>
           </Col>
-          <Col md={24} lg={6} className="box box-blue-light">
+          <Col md={24} lg={6} className="box box-blue-light" data-aos-delay="600" data-aos="flip-up">
             <div className="box-icon">
               <img src="/Assets/icons/icon-king-gold.svg" alt="" />
             </div>
@@ -524,7 +532,7 @@ export default function Landing() {
               Continue 6 months usage auto upgrade to Platinum
             </p>
           </Col>
-          <Col md={24} lg={6} className="box box-blue">
+          <Col md={24} lg={6} className="box box-blue"  data-aos-delay="900" data-aos="flip-up">
             <div className="box-icon">
               <img src="/Assets/icons/icon-king-gray.svg" alt="" />
             </div>
@@ -535,7 +543,7 @@ export default function Landing() {
               Continue 12 months usage auto upgrade to Diamond
             </p>
           </Col>
-          <Col md={24} lg={6} className="box box-brown">
+          <Col md={24} lg={6} className="box box-brown"  data-aos-delay="12000" data-aos="flip-up">
             <div className="box-icon">
               <img src="/Assets/icons/icon-cristal.svg" alt="" />
             </div>
@@ -550,22 +558,22 @@ export default function Landing() {
         </Row>
 
         <Row className="space-top lg">
-          <Col md={0} lg={6}>
+          <Col md={0} lg={6}  data-aos-delay="300" data-aos="fade-right">
             <img className="flying" src="/Assets/img/block-5-img1.svg" alt="" />
           </Col>
-          <Col md={24} lg={6}>
+          <Col md={24} lg={6} data-aos-delay="300" data-aos="fade-right">
             <h1 className="gothma bold space-top lg f25 left">
               How to Gain Membership Point
             </h1>
           </Col>
-          <Col md={24} lg={0}>
+          <Col md={24} lg={0} data-aos-delay="300" data-aos="fade-right">
             <img className="flying" src="/Assets/img/block-5-img1.svg" alt="" />
             <img className="flying" src="/Assets/img/block5-img2.svg" alt="" />
           </Col>
-          <Col md={0} lg={6}>
+          <Col md={0} lg={6} data-aos-delay="300" data-aos="fade-left">
             <img className="flying" src="/Assets/img/block5-img2.svg" alt="" />
           </Col>
-          <Col md={24} lg={6}>
+          <Col md={24} lg={6} data-aos-delay="300" data-aos="fade-left">
             <h1 className="gotham bold space-top lg f25 left">
               Transform your good credit into more earning now!
             </h1>
@@ -595,7 +603,7 @@ export default function Landing() {
               </span>
             </div>
           </Col>
-          <Col md={24} lg={9} className="space-top lg">
+          <Col md={24} lg={9} className="space-top lg" data-aos-delay="300" data-aos="fade-left">
             <p className="med bold small-height text-light-shadow dark-gray">
               {" "}
               <span className="red">Download now! 24 Months Free!</span>
@@ -677,10 +685,10 @@ export default function Landing() {
       </section>
       <section className="section7">
         <Row>
-          <Col md={0} lg={12}>
+          <Col md={0} lg={12} data-aos-delay="900" data-aos="fade-down">
             <img className="flying" src="/Assets/img/block7-img.svg" alt="" />
           </Col>
-          <Col md={24} lg={12}>
+          <Col md={24} lg={12} data-aos-delay="1600" data-aos="fade-down">
             <h1 className="f35 white gotham">
               Not ready to make any payment now?{" "}
             </h1>
@@ -738,7 +746,7 @@ export default function Landing() {
       </section>
       <section className="section8">
         <Row type="flex" justify="space-around">
-          <Col md={24} lg={9}>
+          <Col md={24} lg={9} data-aos-delay="900" data-aos="fade-right">
             <h1 className="bold f30 gotham dark-gray">
               To know more about our news and updates, please subscribe now{" "}
             </h1>

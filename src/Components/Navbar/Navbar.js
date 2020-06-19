@@ -54,7 +54,7 @@ export default function Navbar({isWhite}) {
       </Row>
       <Row>
         <Col span={14} className="bordered-right">
-          <div style={{ paddingTop: 38 }} className="bordered-bottom">
+          <div style={{ paddingTop: 25 }} className="bordered-bottom">
             <ul className="list nav">
               <li>
                 <div className="list-item-icon red">
@@ -182,7 +182,7 @@ export default function Navbar({isWhite}) {
       </Row>
       <Row>
         <Col span={14} className="bordered-right">
-          <div style={{ paddingTop: 38 }} className="">
+          <div style={{ paddingTop: 25 }} className="">
             <b className="bold-sm-title feature">Feature</b>
             <ul className="list">
               <li>
@@ -251,7 +251,7 @@ export default function Navbar({isWhite}) {
           </ul>
           <div>
             <img
-              style={{ float: "right", marginRight: -39 }}
+              style={{ float: "right", marginRight: -28 }}
               src="/Assets/icons/visacard.svg"
               alt=""
             />
