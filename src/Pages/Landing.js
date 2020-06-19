@@ -111,12 +111,15 @@ export default function Landing() {
       onCancel={handleCancelVideo}
       footer={[]}
     >
-      <video autoPlay controls>
-        <source
-          src="/Assets/ConvertIntroVideoV5.3.mp4"
-          type="video/mp4"
-        ></source>
-      </video>
+    <h1>video is not uploaded !</h1>
+      {
+      //   <video autoPlay controls>
+      //   <source
+      //     src="/Assets/ConvertIntroVideoV5.3.mp4"
+      //     type="video/mp4"
+      //   ></source>
+      // </video>
+    }
     </Modal>
   );
   return (
@@ -715,7 +718,6 @@ export default function Landing() {
             md={24}
             lg={14}
             data-aos="flip-right"
-            data-aos-duration="2000"
             data-aos-delay="1000"
           >
             <input

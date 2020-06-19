@@ -278,7 +278,7 @@
 }
 .section8 {
   background: #f6f6fa;
-  padding: 100px 190px;
+  padding: 100px 83px;
 }
 .footer {
   background: #1c202b;
@@ -342,6 +342,12 @@ border-radius: 5px;
 border-right: solid 5px $blue;
 display: flex;
 margin-bottom: 14px;
+transition: all ease .3s;
+height: 145px;
+&:hover{
+  transform: translateY(-4px);
+    box-shadow: 1px 2px 12px #00000030;
+}
 .card-h-title{
   font-size: 16px;
   font-family: Montserrat;
@@ -360,17 +366,19 @@ margin-bottom: 15px;
     width: 200px;
     height: 145px;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: inline-block;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     &.cover1{
-      background: url(/Assets/img/modal-card-img-3.svg);
+      background-image: url(/Assets/img/modal-card-img-3.svg);
     }
     &.cover2{
-      background: url(/Assets/img/modal-card-img-2.svg);
+      background-image: url(/Assets/img/modal-card-img-2.svg);
     }
     &.cover3{
-      background: url(/Assets/img/modal-card-img-1.svg);
+      background-image: url(/Assets/img/modal-card-img-1.svg);
     }
   }
 }
