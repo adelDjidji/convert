@@ -1,0 +1,110 @@
+/**
+ Tablet and mobile (md, sm ,xs)
+  */
+@media (max-width: 991px) {
+  .space-in-left {
+    padding-left: 21px !important;
+    &.xxl {
+      padding-left: 34px !important;
+    }
+    &.xl {
+      padding-left: 29px !important;
+    }
+    &.lg {
+      padding-left: 25px !important;
+    }
+    &.md {
+      padding-left: 17px !important;
+    }
+    &.sm {
+      padding-left: 10px !important;
+    }
+  }
+  .space-in-right {
+    padding-right: 21px !important;
+    &.xxl {
+      padding-right: 34px !important;
+    }
+    &.xl {
+      padding-right: 29px !important;
+    }
+    &.lg {
+      padding-right: 25px !important;
+    }
+    &.md {
+      padding-right: 17px !important;
+    }
+    &.sm {
+      padding-right: 10px !important;
+    }
+  }
+  .space-in-top {
+    padding-top: 21px !important;
+    &.xl {
+      padding-top: 29px !important;
+    }
+    &.lg {
+      padding-top: 25px !important;
+    }
+    &.md {
+      padding-top: 17px !important;
+    }
+    &.sm {
+      padding-top: 10px !important;
+    }
+  }
+  .space-in-bottom {
+    padding-bottom: 21px !important;
+    &.xl {
+      padding-bottom: 29px !important;
+    }
+    &.lg {
+      padding-bottom: 25px !important;
+    }
+    &.md {
+      padding-bottom: 17px !important;
+    }
+    &.sm {
+      padding-bottom: 10px !important;
+    }
+    &.xs {
+      padding-bottom: 14px !important;
+    }
+  }
+  .space-left {
+    margin-left: 21px !important;
+    &.lg {
+      margin-left: 45px !important;
+    }
+  }
+  .space-right {
+    margin-right: 21px !important;
+    &.lg {
+      margin-right: 45px !important;
+    }
+  }
+  .space-top {
+    margin-top: 21px !important;
+    &.sm {
+      margin-top: 22px !important;
+    }
+    &.md {
+      margin-top: 17px !important;
+    }
+    &.lg {
+      margin-top: 45px !important;
+    }
+    &.xl {
+      margin-top: 60px !important;
+    }
+  }
+  .space-bottom {
+    margin-bottom: 21px !important;
+    &.lg {
+      margin-bottom: 30px !important;
+    }
+  }
+  ul.list li span{
+    display: flow-root !important;
+  }
+}

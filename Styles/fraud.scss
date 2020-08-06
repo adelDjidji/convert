@@ -1,0 +1,544 @@
+$red: #ff3a44;
+.fraud-container {
+  div.ant-col.flex-end {
+    display: flex !important;
+    justify-content: flex-end !important;
+    
+  }
+  .header {
+    background-image: url(/Assets/img/fraud.png);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    padding-top: 230px;
+    .title {
+      font-family: gotham-pro;
+
+      font-size: 35px;
+      line-height: 45px;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 0px 8px 12px rgba(56, 56, 56, 0.25);
+      max-width: 20ch;
+      margin: auto;
+      margin-bottom: 45px;
+      .icon {
+        height: 47px !important;
+      }
+    }
+    .sub-title {
+      font-family: ubuntu;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 32px;
+      text-align: center;
+      color: #fa304d;
+      max-width: 41ch;
+      margin: auto;
+    }
+  }
+  .title-section {
+    font-family: gotham;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #1c202b;
+    text-shadow: 0px 8px 12px rgba(56, 56, 56, 0.25);
+  }
+  section {
+    padding: 0px 190px;
+  }
+  .bg1 {
+    margin-top: 10px;
+    height: 530px;
+    background-image: url(/Assets/img/fraud-bg-1.png);
+    background-position: center;
+    background-size: cover;
+  }
+  .section1 {
+    padding: 0px 190px;
+    padding-bottom: 70px;
+    background: #f5f6f8;
+    .boite {
+      padding: 68px;
+      padding-bottom: 28px;
+      border-radius: 5px;
+
+      background: #ffffff;
+      // margin-bottom: -200px;
+    }
+    .boite-wraper {
+      position: relative;
+      top: -245px;
+    }
+    .title-section {
+      margin-block-end: 45px;
+      max-width: 24ch;
+    }
+    .icon {
+      margin-left: -9px !important;
+      margin-bottom: 5px;
+      height: 40px;
+    }
+    .item {
+      margin-bottom: 64px;
+      display: flex;
+      .tit {
+        font-family: gotham;
+        font-size: 18px;
+        line-height: 27px;
+        color: #1c202b;
+        text-shadow: 0px 8px 12px rgba(56, 56, 56, 0.25);
+      }
+      p {
+        font-family: "Open Sans";
+        font-size: 14px;
+        line-height: 21px;
+        color: #0b0000;
+        max-width: 29ch;
+        &.width2 {
+          max-width: 38ch;
+        }
+      }
+      img {
+        margin-right: 25px;
+        margin-top: -8px;
+      }
+    }
+    div.keepp {
+      // position: relative;
+      // top: -180px;
+      position: absolute;
+      width: 100%;
+      margin-top: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 70px;
+    }
+    .keep {
+      max-width: 20ch;
+      // padding-left: 70px;
+    }
+    .red2 {
+      font-family: gotham;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+  .section2 {
+    padding: 100px 190px;
+    .div1 {
+      background-image: url(/Assets/img/fraud-bg-2.png);
+      height: 350px;
+      padding: 0px 68px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 60px;
+      .max2 {
+        max-width: 32ch;
+      }
+      .simple {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+    .div2 {
+      height: 500px;
+      background: #0433ff;
+      border-radius: 5px;
+      overflow: hidden;
+      img {
+        position: relative;
+        bottom: -79px;
+        margin-left: 3vw;
+        max-height: 580px;
+      }
+      .f {
+        margin-top: 34%;
+        margin-left: 50px;
+        padding-right: 35px;
+        p {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 22px;
+          margin-top: 20px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .section3 {
+    background: #f6f6fa;
+    padding: 80px 190px;
+    .title-section {
+      margin-bottom: 57px;
+    }
+    .card-item {
+      background: #ffffff;
+      border-radius: 5px;
+      text-align: center;
+      padding: 40px 30px;
+      margin: 0 10px;
+      height: 100%;
+      img {
+        margin: 0 auto;
+      }
+      .title {
+        font-family: gotham;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: black;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-family: "Open Sans";
+        font-style: normal;
+        // font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #4f5258;
+        max-width: 35ch;
+        margin: auto;
+      }
+    }
+  }
+  .section4 {
+    padding: 60px 190px;
+    .contact-section2 {
+      padding: 36px 39px;
+      background-color: #0433ff;
+      background-image: url(/Assets/img/world-dots.svg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: cover;
+      background-position: top;
+      border-radius: 5px;
+      .small-title {
+        margin-bottom: 36px;
+      }
+      p.simple {
+        display: flex;
+        align-items: center;
+      }
+      .img-mail {
+        margin-right: 22px;
+      }
+      .social {
+        display: flex;
+        margin-block-start: 32px;
+        .fb {
+          padding: 11px 14px;
+          margin-right: 20px;
+          &:hover {
+            background: white;
+            svg path {
+              fill: #3d589b;
+            }
+          }
+        }
+        .insta {
+          padding: 10px;
+          margin-right: 20px;
+          &:hover {
+            background: white;
+            svg path {
+              fill: #eb0447;
+            }
+          }
+        }
+        .insta,
+        .fb {
+          background: rgb(85, 116, 255);
+          border-radius: 10px;
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          transition: all ease 0.3s;
+        }
+      }
+    }
+    .keep {
+      max-width: 18ch;
+    }
+  }
+  .keep {
+    font-family: gotham;
+    font-size: 30px;
+    line-height: 42px;
+    color: #1c202b;
+    font-weight: bold;
+    &.red {
+      color: #fa304d;
+    }
+  }
+}
+
+/**
+ Tablet and mobile (md, sm ,xs) -----------------------------------------------------
+  */
+@media (max-width: 991px) {
+  .fraud-container {
+    .header {
+      height: 510px;
+      padding-top: 155px;
+      .title {
+        font-size: 22px;
+        line-height: 29px;
+        margin-bottom: 59px;
+        .icon {
+          margin-top: 6px;
+          height: 37px !important;
+        }
+      }
+      .sub-title {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 32ch;
+        margin: auto;
+      }
+    }
+    .title-section {
+      font-size: 22px;
+      line-height: 33px;
+    }
+    .bg1 {
+      margin-top: 10px;
+      height: 200px;
+    }
+    .section1 {
+      padding: 0px;
+      .boite {
+        padding: 50px 32px;
+        padding-bottom: 28px;
+        border-radius: 5px;
+        background: #ffffff;
+      }
+      .boite-wraper {
+        position: relative;
+        top: 0px;
+      }
+      .title-section {
+        max-width: 18ch;
+      }
+      .icon {
+        // margin-left: -9px !important;
+        // margin-bottom: 5px;
+        // height: 40px;
+      }
+      .item {
+        margin-bottom: 25px;
+        .tit {
+          font-size: 16px;
+          line-height: 24px;
+        }
+        p {
+          // font-family: "Open Sans";
+          // font-size: 14px;
+          // line-height: 21px;
+          // color: #0b0000;
+          // max-width: 29ch;
+          &.width2 {
+            max-width: 28ch;
+          }
+        }
+        img {
+          margin-right: 25px;
+          margin-top: -8px;
+          &.sm{
+            margin-right: 40px;
+          }
+          &.md{
+            margin-right: 35px;
+          }
+        }
+      }
+      div.keepp {
+        position: relative;
+        margin-top: 50px;
+
+        
+        padding: 0px 30px;
+        padding-bottom: 50px;
+      }
+      .keep {
+        max-width: 20ch;
+        margin-bottom: 30px;
+      }
+      div.ant-col.flex-end {
+        display: flex !important;
+        justify-content: initial !important;
+        
+      }
+      .red2 {
+        font-size: 15px !important;
+      }
+    }
+    .section2 {
+      padding: 50px 30px;
+      .div1 {
+
+        .keep{
+          font-size: 25px !important;
+          max-width: 13ch;
+        }
+        background-size: cover;
+        background-position-x: 30%;    
+        height: 272px;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+        .max2 {
+          max-width: 32ch;
+        }
+        .simple {
+          font-size: 18px;
+          line-height: 27px;
+          max-width: 21ch;
+          text-align: left;
+        }
+      }
+      .div2 {
+        height: 500px;
+        background: #0433ff;
+        border-radius: 5px;
+        overflow: hidden;
+        img {
+          position: relative;
+          bottom: -5px;
+          margin-left: 6vw;
+          max-height: 370px;
+        }
+        .f {
+          margin-top: 50px;
+          margin-left: 20px;
+          padding-right: 35px;
+          p {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 22px;
+            margin-top: 20px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .section3 {
+      background: #f6f6fa;
+      padding: 50px 30px;
+      .title-section {
+        
+        font-size: 25px;
+        line-height: 33px;
+        max-width: 18ch;
+        margin: auto;
+        margin-bottom: 44px;
+    
+      }
+      .ant-col{
+        margin-bottom: 20px;
+      }
+      .card-item {
+        // margin-bottom: 20px;
+        img {
+          margin: 0 auto;
+        }
+        .title {
+          font-family: gotham;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          color: black;
+          margin-top: 30px;
+          margin-bottom: 20px;
+        }
+        p {
+          font-family: "Open Sans";
+          font-style: normal;
+          // font-weight: normal;
+          font-size: 14px;
+          line-height: 21px;
+          text-align: center;
+          color: #4f5258;
+          max-width: 35ch;
+          margin: auto;
+        }
+      }
+    }
+    .section4 {
+      padding: 50px 30px !important;
+      .contact-section2 {
+        padding: 30px 20px;
+        padding-bottom: 63px;
+        .small-title {
+          margin-bottom: 36px;
+        }
+        p.simple {
+          display: flex;
+          align-items: center;
+          font-size: 16px !important;
+        }
+        .img-mail {
+          margin-right: 12px;
+        }
+        .social {
+          display: flex;
+          margin-block-start: 32px;
+          .fb {
+            padding: 11px 14px;
+            margin-right: 20px;
+            &:hover {
+              background: white;
+              svg path {
+                fill: #3d589b;
+              }
+            }
+          }
+          .insta {
+            padding: 10px;
+            margin-right: 20px;
+            &:hover {
+              background: white;
+              svg path {
+                fill: #eb0447;
+              }
+            }
+          }
+          .insta,
+          .fb {
+            background: rgb(85, 116, 255);
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: all ease 0.3s;
+          }
+        }
+      }
+      .keep {
+        max-width: 18ch;
+        margin-bottom: 32px;
+      }
+    }
+    .keep {
+      font-size: 22px;
+      line-height: 31px;
+    }
+    
+  }
+}

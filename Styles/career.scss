@@ -1,0 +1,555 @@
+.career-container {
+  .career-header {
+    background-image: url(/Assets/img/creer-bg.png);
+    height: 630px;
+    .icon {
+      height: 45px;
+      margin-bottom: 11px;
+    }
+    .title-container {
+      position: relative;
+      top: 260px;
+      text-align: center;
+      h1 {
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 58px;
+        text-align: center;
+        color: #ffffff;
+        font-family: gotham;
+        text-shadow: 0px 8px 12px rgba(56, 56, 56, 0.25);
+      }
+      .red-box {
+        height: 87px;
+        background: #ff516a;
+        box-shadow: 9px 9px 30px rgba(56, 56, 56, 0.1);
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+        font-family: gotham;
+        text-align: center;
+        color: #ffffff;
+        max-width: max-content;
+        padding: 26px 50px;
+        margin: auto;
+      }
+    }
+  }
+
+  section {
+    padding: 80px 170px;
+  }
+  .section1 {
+    padding: 52px 170px;
+    .big-title {
+      font-size: 35px !important;
+      margin-top: 100px !important;
+    }
+    p.simple {
+      font-size: 16px !important;
+      line-height: 24px !important;
+      max-width: 54ch;
+    }
+    .move-r {
+      position: relative;
+      right: -13%;
+    }
+  }
+  .section2 {
+    padding: 80px 170px;
+    .title {
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 39px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .box {
+      max-width: 500px;
+      width: 500px;
+      height: 446px;
+      max-height: 446px;
+      margin: auto;
+      &.left-one {
+        margin-left: 0 !important;
+        margin-right: 41px !important;
+      }
+      &.right-one {
+        margin-right: 0 !important;
+        margin-left: 41px !important;
+        .box-text {
+          left: 75px !important;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .box-text {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 33px;
+        position: absolute;
+        top: 49px;
+        left: 41px;
+        max-width: 16ch;
+      }
+    }
+  }
+  .section3 {
+    .title {
+      font-family: gotham;
+      text-align: center;
+      font-size: 32px;
+      line-height: 48px;
+      color: black;
+      text-shadow: 0px 8px 12px rgba(56, 56, 56, 0.25);
+    }
+    p {
+      font-family: gotham-pro;
+      font-size: 18px;
+      line-height: 27px;
+      text-align: center;
+      color: #000000;
+    }
+    .domaines {
+      margin-top: 57px;
+      .domain {
+        display: flex;
+        img.domain-num {
+          max-height: 87px;
+          &.move {
+            margin-left: 20px;
+          }
+        }
+        div.domaine {
+          background: #f5f6f8;
+          border-radius: 5px;
+          height: 90px;
+          display: flex;
+          align-items: center;
+          margin-left: 18px;
+          padding: 0 34px;
+          min-width: 84%;
+          margin-bottom: 20px;
+        }
+        .icon-d {
+          max-width: 52px;
+          margin-right: 27px;
+        }
+        .text-d {
+          font-family: gotham;
+          font-size: 16px;
+          line-height: 22px;
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .section4 {
+    background: #f6f6fa;
+    padding-bottom: 250px;
+    .title {
+      font-family: gotham;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 48px;
+      color: #000000;
+      text-shadow: 0px 8px 12px rgba(56, 56, 56, 0.25);
+      margin-bottom: 57px;
+    }
+    .stap {
+      background-color: white;
+      font-family: gotham;
+      padding-top: 47px;
+      padding-bottom: 47px;
+      border-radius: 5px;
+      max-height: 400px;
+      height: 400px;
+      max-width: 340px;
+      .darks {
+        height: 180px;
+        padding-top: 32px;
+        // display: flex;
+        // align-items: center;
+      }
+      .step-txt {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #fa304d;
+        text-shadow: 0px 8px 12px rgba(56, 56, 56, 0.25);
+        margin-top: 22px;
+      }
+      p.des {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        margin-top: 10px;
+        margin-bottom: 8px;
+      }
+      p.simple {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: center;
+        max-width: 38ch;
+        margin: auto;
+      }
+    }
+  }
+
+  .section5 {
+    .have-fun {
+      margin-top: -237px;
+      margin-bottom: 72px;
+    }
+    .box-fun {
+      max-width: 100%;
+      width: 100%;
+      height: 350px;
+      max-height: 350px;
+      margin: auto;
+      img {
+        width: 100%;
+      }
+      .box-text {
+        position: absolute;
+        left: 200px !important;
+        margin-top: 29px;
+        max-width: 16ch !important;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 39px;
+      }
+    }
+    p {
+      color: black;
+      font-family: gotham;
+    }
+  }
+  .fixed-logo {
+    position: absolute;
+
+    height: 60px;
+    left: 65%;
+    top: 589px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+  }
+}
+
+/**
+ Laptop L-----------------------------------------------------
+  */
+@media (max-width: 1320px) and (min-width: 999px) {
+  .career-container {
+    .box {
+      max-width: 436px !important;
+      width: 436px !important;
+      height: 399px !important;
+      max-height: 399px !important;
+      margin: auto;
+      padding: 30px !important;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .box-text {
+        left: 58px !important;
+        max-width: 14ch !important;
+      }
+    }
+    .stap {
+      transform: scale(0.9);
+    }
+    .section2 .box.right-one {
+      margin-left: 22px !important;
+  }
+  
+  .section2 .box.right-one {
+    max-width: 465px !important;
+      width: 500px !important;
+      height: 446px;
+      max-height: 446px;
+      margin: auto;
+  }
+  
+  // .box.right-one {
+  //     max-width: 440px !important;
+  //     width: 440px !important;
+      
+  // }
+  .section2 .box.right-one .box-text {
+    left: 94px !important;
+}
+  }
+}
+/**
+ Tablet and mobile (md, sm ,xs) -----------------------------------------------------
+  */
+@media (max-width: 991px) {
+  .career-container {
+    .fixed-logo {
+      position: absolute;
+      height: 40px;
+      left: 108px;
+      top: 429px;
+      filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+    }
+    .career-header {
+      height: 450px;
+      background-size: cover;
+background-position: center;
+
+      .title-container {
+        position: relative;
+        top: 150px;
+        text-align: center;
+        h1 {
+          font-size: 25px;
+          line-height: 32px;
+          margin-bottom: 30px;
+        }
+        .red-box {
+          font-size: 22px;
+          line-height: 29px;
+          padding: 16px 0px;
+          margin: auto;
+          max-width: 18ch;
+        }
+      }
+    }
+
+    section {
+      padding: 60px 28px;
+      // padding-top: 50px !important;
+      
+    }
+    .section1 {
+      padding: 60px 28px;
+      padding-bottom: 30px;
+      .big-title {
+        font-size: 25px !important;
+        line-height: 32px;
+        margin-top: 0px !important;
+        text-align: left !important;
+      }
+      p.simple {
+        font-size: 15px;
+        line-height: 22px;
+        text-align: justify;
+        margin-bottom: 2em;
+      }
+      .icon {
+        height: 25px;
+        margin-bottom: 7px;
+      }
+      .move-r {
+        position: relative !important;
+        right: 0 !important;
+        top: 6% !important;
+      }
+    }
+    .section2 {
+      padding: 30px 28px;
+      .title {
+        font-size: 18px;
+        line-height: 27px;
+
+        margin-bottom: 25px;
+      }
+      div.box {
+        max-width: 315px !important;
+        width: 315px !important;
+        height: 280px !important;
+        max-height: 280px !important;
+        margin: auto;
+        margin-bottom: 18px;
+        &.left-one {
+          margin-left: 0 !important;
+          margin-right: 0px !important;
+        }
+        &.right-one {
+          margin-right: 0 !important;
+          margin-left: 0px !important;
+          .box-text {
+            left: 30px !important;
+            max-width: 15ch;
+          }
+        }
+        // img {
+        //   width: 100%;
+        //   height: 100%;
+        // }
+        .box-text {
+          font-size: 16px;
+          line-height: 24px;
+          position: absolute;
+          top: 28px;
+          left: 30px;
+          max-width: 16ch;
+        }
+      }
+    }
+    .section3 {
+      padding: 44px 24px;
+      .title {
+        font-size: 22px;
+        line-height: 33px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 27px;
+      }
+      .domaines {
+        margin-top: 27px;
+        .domain {
+          display: flex;
+          align-items: center;
+          img.domain-num {
+            height: 40px;
+            &.move {
+              margin-left: 0px;
+            }
+          }
+          div.domaine {
+            height: 80px;
+            margin-left: 10px;
+            padding: 0 18px;
+            margin-bottom: 9px;
+            margin-top: 8px;
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+          }
+          .icon-d {
+            max-width: 65px;
+            margin-right: 24px;
+          }
+          .text-d {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+
+    .section4 {
+      padding: 37px 30px !important;
+      padding-bottom: 250px;
+      .title {
+        font-size: 22px;
+        line-height: 33px;
+
+        margin-bottom: 25px;
+      }
+      .stap {
+        padding-top: 30px;
+        padding-bottom: 27px;
+        max-height: unset;
+        height: 340px;
+        max-width: unset;
+        width: 100%;
+        margin-bottom: 20px;
+        .darks {
+          padding-top: 20px;
+          height: 143px;
+          .dark-btn {
+            margin-bottom: 7px !important;
+          }
+        }
+        &.stap1 {
+          height: 299px !important;
+        }
+        &.stap2 {
+        }
+        &.stap3 {
+          height: 421px;
+        }
+        .step-txt {
+          font-size: 18px;
+          line-height: 27px;
+          margin-top: 22px;
+        }
+        p.des {
+          text-align: center;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000000;
+          margin-top: 10px;
+          margin-bottom: 8px;
+        }
+        p.simple {
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 17px;
+          text-align: center;
+          max-width: 35ch;
+          margin: auto;
+        }
+      }
+    }
+
+    .section5 {
+      padding: 49px 28px !important;
+      padding-bottom: 25px !important;
+      .have-fun {
+        margin-top: 0px;
+        margin-bottom: 50px;
+      }
+      .box-fun {
+        max-width: 100%;
+        width: 100%;
+        height: 200px;
+        max-height: 200px;
+        margin: auto;
+        img {
+          width: 100%;
+        }
+        .box-text {
+          position: absolute;
+          left: 49px !important;
+          margin-top: 21px !important;
+          max-width: 16ch !important;
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
+      p.f18 {
+        color: black;
+        font-family: gotham;
+        font-size: 16px !important;
+        line-height: 21px !important;
+        text-align: center !important;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+/**
+ Laptop XL-----------------------------------------------------
+  */
+  @media (min-width: 1441px) {
+    .career-container {
+      .have-fun{
+        .box-fun{
+          background-image: url(/Assets/img/have-fun.png);
+          background-size: cover;
+          height: 364px;
+          max-height: unset;
+          .box-text{
+            position: relative;
+            left: 36px !important;
+            top: 23px;
+          }
+        }
+        img.only-desktop{
+          display: none !important;
+        }
+      }
+    }
+  }

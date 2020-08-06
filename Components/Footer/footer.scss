@@ -1,0 +1,100 @@
+.footer {
+    background: #1c202b;
+    color: white;
+    padding: 41px 190px 1px 190px;
+    // z-index: 9999999;
+    // position: relative;
+    .ant-col-xl-4{
+      margin-right: 10px;
+    }
+    hr {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      border-color: rgba(196, 196, 196, 0.2);
+    }
+    ul.footer-list {
+      list-style: none;
+      padding: 0;
+      font-family: 'Open sans';
+font-weight: lighter;
+      margin-top: 1.5em;
+      a{
+        color: rgba(255, 255, 255, 0.4) ;
+      }
+    }
+    .social {
+      margin-top: 27px;
+      display: flex;
+      div {
+        cursor: pointer;
+        transition: all ease-in 0.3s;
+        background: rgba(196, 196, 196, 0.15);
+        border-radius: 10px;
+        margin-right: 20px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg path {
+          transition: all ease-in 0.3s;
+        }
+        &.fb:hover {
+          background: white;
+          svg path {
+            fill: #3d589b;
+          }
+        }
+        &.insta:hover {
+          background: white;
+          svg path {
+            // background-image: linear-gradient(#015fbb, #eb0447);
+            fill: #eb0447;
+          }
+        }
+      }
+    }
+  }
+
+
+  /**
+ Tablet and mobile (md, sm ,xs)
+  */
+@media (max-width: 991px) {
+  .footer .social {
+    margin-top: 15px;
+  }
+  hr{
+    border-width: 0.3px !important;
+  }
+  .footer-links{
+    background: transparent !important;
+    margin-top: 50px !important;
+    .f14{
+      font-size: 12px !important;
+    }
+    .whi{
+      color: white !important;
+    }
+    a{
+      font-size: 13px !important;
+      line-height: 32px !important;
+    }
+    .ant-collapse-header{
+      padding: 9px 0pt !important;
+      line-height: 12px;
+      color: white;
+    }
+    .ant-collapse-content > .ant-collapse-content-box {
+      padding: 0px !important;
+  }
+    ul.footer-list {
+      margin-top: 9px !important;
+    }
+    .ant-collapse-item{
+      border: none !important;
+      margin-bottom: 12px;
+    }
+  }
+}
