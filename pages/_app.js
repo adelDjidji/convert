@@ -5,8 +5,8 @@ import "../Components/Footer/footer.scss";
 import "../Components/Navbar/navbar.scss";
 import "../Styles/landing.scss";
 import "../Styles/landing-respo.scss";
-import "../Styles/app.scss";
-import "../Styles/app.respo.scss";
+import "../Styles/App.scss";
+import "../Styles/App.respo.scss";
 
 import "../Styles/about.scss";
 import "../Styles/bill.scss";
