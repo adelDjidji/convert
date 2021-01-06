@@ -19,7 +19,7 @@
     "add": "^2.0.6",
     "animate.css": "^4.1.0",
     "antd": "^3.26.11",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
